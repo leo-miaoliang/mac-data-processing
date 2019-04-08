@@ -1,0 +1,34 @@
+{
+  "index_patterns": [
+    "macaddr-*"
+  ],
+  "settings": {
+    "index": {
+      "number_of_shards": "1"
+    }
+  },
+  "mappings": {
+    "log": {
+      "properties": {
+        "client_geo": {
+          "type": "geo_point"
+        },
+        "rssi":{
+          "type":"integer"
+        },
+        "range":{
+          "type":"double"
+        },
+        "rssi1":{
+          "type":"integer"
+        },
+        "rssi2":{
+          "type":"integer"
+        },
+        "rssi3":{
+          "type":"integer"
+        }
+      }
+    }
+  }
+}
